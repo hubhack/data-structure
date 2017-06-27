@@ -7,6 +7,11 @@ class _BinTreeNode:
         self.right = None
 
 
+
+
+
+
+
 # 三种depth-first遍历
 def preorderTrav(subtree):
     """先根遍历"""
