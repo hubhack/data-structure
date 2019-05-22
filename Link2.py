@@ -27,7 +27,7 @@ class Link:
     def iternodes(self):
         """遍历整个链表"""
         cur = self._head
-        while None != cur:
+        while cur != None:
             print(cur.data, end = '  ')
             cur = cur.next
         print()
@@ -38,7 +38,7 @@ class Link:
             self._head = node
         else:
             cur = self._head
-            while None != cur.next:
+            while cur.next != None:
                 cur = cur.next
             cur.next = node
             node.prev = cur
@@ -62,7 +62,7 @@ class Link:
         """删除节点"""
         cur = self._head
         while None != cur:
-            if cur.elem == data:
+            if cur.data == data:
                 # 处理删除节点是头结点的情况
                 if cur == self._head:
                     self._head = cur.next
@@ -75,11 +75,12 @@ class Link:
                 break
             else:
                 cur = cur.next
+
 ll = Link()
+ll.append(5)
+ll.append(7)
 ll.append(3)
 ll.append(4)
-ll.append(5)
-ll.append(6)
-ll.insert(3, 'a')
+# ll.insert(3, 'a')
 # ll.remove('a')
 ll.iternodes()
