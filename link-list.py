@@ -113,6 +113,9 @@ class LinkedList:
             current = current.prev if reverse else current.next
 
 
+
+
+
 if __name__ == '__main__':
     a = LinkedList()
     a.append(3)
